@@ -1,0 +1,180 @@
+:host{
+
+  .session-track-ionic {
+    color: var(--ion-color-primary);
+  }
+  
+  .session-track-angular {
+    color: var(--ion-color-angular);
+  }
+  
+  .session-track-communication {
+    color: var(--ion-color-communication);
+  }
+  
+  .session-track-tooling {
+    color: var(--ion-color-tooling);
+  }
+  
+  .session-track-services {
+    color: var(--ion-color-services);
+  }
+  
+  .session-track-design {
+    color: var(--ion-color-design);
+  }
+  
+  .session-track-workshop {
+    color: var(--ion-color-workshop);
+  }
+  
+  .session-track-food {
+    color: var(--ion-color-food);
+  }
+  
+  .session-track-documentation {
+    color: var(--ion-color-documentation);
+  }
+  
+  .session-track-navigation {
+    color: var(--ion-color-navigation);
+  }
+  
+  .show-favorite {
+    position: relative;
+  }
+  
+  .icon-heart-empty {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+  }
+  
+  .icon-heart {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    transform: scale(0);
+    transition: transform 0.3s ease;
+  }
+  
+  .show-favorite .icon-heart {
+    transform: scale(1);
+  }
+  
+  .show-favorite .icon-heart-empty {
+    transform: scale(0);
+  }
+  
+  
+  .slide-image {
+    //  height:5%;
+      width: 30%;
+      position:relative;
+      left:5%;
+      top: 20%;
+    }
+  
+  ion-icon[name='options']:before {
+    content: url('assets/img/but-filtercat-pressed.png');
+  }
+  
+  ion-menu-button {
+    background-image : url("assets/img/but-filtercat-pressed.png");
+    top: 5%;
+  }
+  .filter {
+    background-image : url("assets/img/bt-about-pressed.png");  
+    top: 5%;
+  }
+  
+  .slide-image2 {
+    //  height:5%;
+      width: 15%;
+      position:absolute;
+      right:5%;
+      top: 5%;
+  }
+  
+  .slide-image3 {
+  //  height:5%;
+    width: 15%;
+    position:absolute;
+    right:18%;
+    top: 5%;
+  }
+  
+  ion-menu-button:hover {-webkit-filter: brightness(150%); }
+  
+  ion-header {
+    height: 10%;
+    box-shadow: none;
+    border-bottom: 3px #f26422;
+  }
+  ion-header:after {
+   // content: none;
+   // border-bottom: 3px #f26422;
+    background-color:#f26422;
+    left: 0;
+    bottom: -2px;
+    background-position: left 0 top 0;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+  }
+  
+  @font-face {
+    font-family: "Cabin";
+    src: url("assets/img/fonts/Cabin-Bold.ttf") format("ttf");
+    font-weight: bold;
+  }
+  body {
+    font-family: "Cabin" !important;
+  }
+  
+  .nameOfTheBook{
+  //  color:#3c52a4;
+    font-size:5vh;
+    padding:0px;
+    margin: 0px;
+  }
+  .nameOfTheAuthor{
+    color:#1fb182;
+    font-size:3vh;
+    padding:0px;
+    margin: 0px;
+  }
+  .timeToRead{
+    color:#bd9a10;
+    font-size:3vh;
+    padding:0px;
+    margin: 0px;
+  }
+  .noPadding{
+    border:0px;
+    padding:0px;
+    margin:0px;
+  }
+  .newPadding{
+    padding: 5px 5px;
+  }
+  
+  .slide-image:active {
+    filter: brightness(1.5);
+  }
+  
+  ion-menu-toggle > img:active {
+    filter: brightness(1.5);
+  }
+  
+  .slide-image2:active {
+    filter: brightness(1.5);
+  }
+  
+  
+  }
+  
+  
+  

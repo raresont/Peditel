@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar>
+  <!--  <ion-buttons slot="start">
+      <ion-button (click)="dismiss()">Cancel</ion-button>
+    </ion-buttons>
+  -->
+    <ion-title>
+      Despre
+    </ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button (click)="dismiss()" strong>Închide</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="outer-content1">
+
+    <ion-card justify-content-center>
+  <div>{{about?.content}}</div>
+  </ion-card>
+
+  <ion-card justify-content-center>
+    <p>Citește</p>
+  <p *ngFor="let link of about?.links">
+    <a [href]="link.link">{{link.name}}</a>
+  </p>
+  </ion-card>
+<!--
+  <ion-list>
+    <ion-list-header>Tracks</ion-list-header>
+
+    <ion-item *ngFor="let track of tracks" [attr.track]="track.name | lowercase">
+      <span slot="start" class="dot"></span>
+      <ion-label>{{track.name}}</ion-label>
+      <ion-toggle [(ngModel)]="track.isChecked" color="success"></ion-toggle>
+    </ion-item>
+
+  </ion-list>
+
+  <ion-list>
+    <ion-item (click)="resetFilters()" detail="false" class="reset-filters">
+      Reset All Filters
+    </ion-item>
+  </ion-list>
+
+-->
+
+</ion-content>

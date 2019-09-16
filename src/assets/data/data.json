@@ -1,0 +1,204 @@
+{
+  "schedule": [
+    {
+      "date": "2047-05-17",
+      "groups": [
+        {
+          "time": "8:00 am",
+          "sessions": [
+            {
+              "name": "Ionica",
+              "timeStart": "8:00 am",
+              "timeEnd": "Hungry",
+              "location": "Park",
+              "tracks": ["Ionica"],
+              "id": "1"
+            }
+          ]
+        },
+        {
+          "time": "9:15 am",
+          "sessions": [
+            {
+              "name": "Ionica",
+              "location": "Bedroom",
+              "description": "Mobile devices and browsers are now advanced enough that developers can build native-quality mobile apps using open web technologies like HTML5, Javascript, and CSS. In this talk, we’ll provide background on why and how we created Ionic, the design decisions made as we integrated Ionic with Angular, and the performance considerations for mobile platforms that our team had to overcome. We’ll also review new and upcoming Ionic features, and talk about the hidden powers and benefits of combining mobile app development and Angular.",
+              "speakerNames": ["Ted Turtle"],
+              "timeStart": "9:30 am",
+              "timeEnd": "Needs sleep",
+              "tracks": ["Ionica"],
+              "id": "2"
+            },
+            {
+              "name": "Crenguta",
+              "location": "Kitchen",
+              "description": "Mobile devices and browsers are now advanced enough that developers can build native-quality mobile apps using open web technologies like HTML5, Javascript, and CSS. In this talk, we’ll provide background on why and how we created Ionic, the design decisions made as we integrated Ionic with Angular, and the performance considerations for mobile platforms that our team had to overcome. We’ll also review new and upcoming Ionic features, and talk about the hidden powers and benefits of combining mobile app development and Angular.",
+              "speakerNames": ["Rachel Rabbit"],
+              "timeStart": "9:45 am",
+              "timeEnd": "Needs to play",
+              "tracks": ["Crenguta"],
+              "id": "3"
+            },
+            {
+              "name": "Crenguta",
+              "location": "Park",
+              "description": "Mobile devices and browsers are now advanced enough that developers can build native-quality mobile apps using open web technologies like HTML5, Javascript, and CSS. In this talk, we’ll provide background on why and how we created Ionic, the design decisions made as we integrated Ionic with Angular, and the performance considerations for mobile platforms that our team had to overcome. We’ll also review new and upcoming Ionic features, and talk about the hidden powers and benefits of combining mobile app development and Angular.",
+              "speakerNames": ["Ellie Elephant"],
+              "timeStart": "9:15 am",
+              "timeEnd": "Pain",
+              "tracks": ["Crenguta"],
+              "id": "4"
+            }
+          ]
+        },
+        {
+          "time": "10:00 am",
+          "sessions": [
+            {
+              "name": "Ionica",
+              "location": "Main Hall",
+              "description": "Mobile devices and browsers are now advanced enough that developers can build native-quality mobile apps using open web technologies like HTML5, Javascript, and CSS. In this talk, we’ll provide background on why and how we created Ionic, the design decisions made as we integrated Ionic with Angular, and the performance considerations for mobile platforms that our team had to overcome. We’ll also review new and upcoming Ionic features, and talk about the hidden powers and benefits of combining mobile app development and Angular.",
+              "speakerNames": ["Eva Eagle", "Lionel Lion"],
+              "timeStart": "10:00 am",
+              "timeEnd": "Hungry",
+              "tracks": ["Ionica"],
+              "id": "5"
+            },
+            {
+              "name": "Crenguta",
+              "location": "Hall 3",
+              "description": "Mobile devices and browsers are now advanced enough that developers can build native-quality mobile apps using open web technologies like HTML5, Javascript, and CSS. In this talk, we’ll provide background on why and how we created Ionic, the design decisions made as we integrated Ionic with Angular, and the performance considerations for mobile platforms that our team had to overcome. We’ll also review new and upcoming Ionic features, and talk about the hidden powers and benefits of combining mobile app development and Angular.",
+              "speakerNames": ["Rachel Rabbit"],
+              "timeStart": "10:15 am",
+              "timeEnd": "10:30 am",
+              "tracks": ["Crenguta"],
+              "id": "6"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+
+  "speakers": [
+    {
+      "name": "Conf. Dr. Popescu Ion",
+      "profilePic": "/assets/img/speakers/bear.jpg",
+      "twitter": "ionicframework",
+      "about": "Medic specialist Genetică medicală (2010), Șef de lucrări la Disciplina Genetică Medicală UMF Cluj, Doctor în Medicină (2011) ",
+      "location": "Everywhere",
+      "email": "burt@example.com",
+      "phone": "+1-541-754-3010",
+      "id": "1"
+    },
+    {
+      "name": "Dr. Pop Ioana",
+      "profilePic": "/assets/img/speakers/cheetah.png",
+      "twitter": "ionicframework",
+      "about": "Medic primar neurologie pediatrică (2004) la Spitalul Clinic de Copii 'Dr. V. Gomoiu' Bucureşti, absolventă a Universității de Medicină și Farmacie „Carol Davila” București ",
+      "location": "Everywhere",
+      "email": "charlie@example.com",
+      "phone": "+1-541-754-3010",
+      "id": "2"
+    }
+ 
+  ],
+
+  "stories": [
+    {
+    
+      "name": "Durere colici",
+      "cover_img": "/assets/img/speakers/bear.jpg",
+      "labels": {
+        "POPULAR" :1,
+        "NOU" : 1
+      },
+      "about": "Medic specialist Genetică medicală (2010), Șef de lucrări la Disciplina Genetică Medicală UMF Cluj, Doctor în Medicină (2011) ",
+      "meta": {
+        "author":"Dr. Ion Popescu",
+        "lecture_time":"5 min"
+      },
+      "email": "burt@example.com",
+      "phone": "+1-541-754-3010",
+      "id": "3"
+    },
+    {
+      "name": "Lipsa pofta mancare",
+      "cover_img": "/assets/img/speakers/lion.jpg",
+      "labels": {
+        "POPULAR" :1,
+        "NOU" : 1
+      },
+      "about": "Medic specialist Genetică medicală (2010), Șef de lucrări la Disciplina Genetică Medicală UMF Cluj, Doctor în Medicină (2011) ",
+      "meta": {
+        "author":"Dr. Ion Popescu",
+        "lecture_time":"5 min"
+      },
+      "email": "burt@example.com",
+      "phone": "+1-541-754-3010",
+      "id": "2"
+    },
+    {
+      "name": "Trusa medicala de concediu",
+      "cover_img": "/assets/img/speakers/mock1.jpg",
+      "labels": {
+        "POPULAR" :1,
+        "NOU" : 1
+      },
+      "about": "Medic specialist Genetică medicală (2010), Șef de lucrări la Disciplina Genetică Medicală UMF Cluj, Doctor în Medicină (2011) ",
+      "meta": {
+        "author":"Dr. Ion Popescu",
+        "lecture_time":"5 min"
+      },
+      "email": "burt@example.com",
+      "phone": "+1-541-754-3010",
+      "id": "1",
+      "content": [{
+        "type": "p",
+        "content" : "Toata lumea asteapta cu nerabdare concediul. Parintii asteapta concediul ca o pauza in tumultoasa viata de parinte, dar din pacate din “meseria” de parinte nu-ti poti lua concediu nici de odihna nici de boala."
+      },
+      {
+        "type": "p",
+        "content" : " Pentru a face fata mai bine provocarilor pregatite de cei mici sau de cei mai mari copii, v-am pregatit o minima trusa de concediu, care speram sa nu va fie necesara, dar daca apar situatii neprevazute, sa va indulceasca putin din nesiguranta si ingrijorare si sa fiti macar partial pregatiti."
+      }
+    
+    ]
+    },
+    {
+      "name": "Lipsa pofta mancare",
+      "cover_img": "/assets/img/speakers/kitten.jpg",
+      "labels": {
+        "POPULAR" :1,
+        "NOU" : 1
+      },
+      "about": "Medic specialist Genetică medicală (2010), Șef de lucrări la Disciplina Genetică Medicală UMF Cluj, Doctor în Medicină (2011) ",
+      "meta": {
+        "author":"Dr. Ion Popescu",
+        "lecture_time":"5 min"
+      },
+      "email": "burt@example.com",
+      "phone": "+1-541-754-3010",
+      "id": "2"
+    }
+ 
+  ],
+
+  "map": [
+    {
+      "name": "Monona Terrace Convention Center",
+      "lat": 43.071584,
+      "lng": -89.38012,
+      "center": true
+    },
+    {
+      "name": "Ionic HQ",
+      "lat": 43.074395,
+      "lng": -89.381056
+    },
+    {
+      "name": "Afterparty - Brocach Irish Pub",
+      "lat": 43.07336,
+      "lng": -89.38335
+    }
+  ]
+}

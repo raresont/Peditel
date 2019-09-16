@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+
+    <ion-title>Donate</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="login-logo">
+    <img src="assets/img/donate.png" alt="Ionic logo">
+  </div>
+
+  <form #loginForm="ngForm" novalidate>
+    <ion-list>
+      <ion-item text-center style="padding-top:0px;border-top:0px;">
+        <ion-label position="stacked" color="primary" style="height:0px;font-size:0%" text-center>SMS</ion-label>
+       <img src="assets/img/sms.png" height="80vh" alt="Ionic logo">
+      </ion-item>
+
+      <ion-item text-center style="padding-top:0px;border-top:0px;">
+          <ion-label position="stacked" color="primary" style="height:0px;font-size:0%" text-center>Paypal</ion-label>
+          <img src="assets/img/paypal.jpg" height="80vh" alt="Ionic logo">
+      </ion-item>
+
+        <ion-item text-center style="padding-top:0px;border-top:0px;">
+            <ion-label position="stacked" color="primary" style="height:0px;font-size:0%" text-center>Bank</ion-label>
+            <img src="assets/img/card.png" height="80vh" alt="Ionic logo">
+        </ion-item>
+      </ion-list>
+    <ion-row responsive-sm>
+      <ion-col>
+        <ion-button (click)="onLogin(loginForm)" type="submit" expand="block">Contact</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button (click)="onSignup()" color="light" expand="block">Proposition</ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+
+</ion-content>

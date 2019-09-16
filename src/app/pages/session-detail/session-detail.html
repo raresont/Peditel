@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button [defaultHref]="defaultHref"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{session?.name}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div padding *ngIf="session">
+        <!--
+        <ion-grid no-padding>
+          <ion-row>
+            <ion-col size="6">
+              <span *ngFor="let track of session?.tracks" [class]="'session-track-'+track.toLowerCase()">{{track}}</span>
+            </ion-col>
+            <ion-col size="6" text-right [ngClass]="{'show-favorite': isFavorite}">
+              <ion-icon name="heart-empty" size="large" class="icon-heart-empty" (click)="toggleFavorite()"></ion-icon>
+              <ion-icon name="heart" color="danger" size="large" class="icon-heart" (click)="toggleFavorite()"></ion-icon>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+        --->
+        <p class="nameOfTheBook"> <b> {{session.name}} </b> </p>
+     
+          <p class="nameOfTheAuthor">
+             Autor  <b> {{session.meta.author}} </b>
+        <!--   <small><rating [score]="data.value['overall_rating']" [max]="5"></rating> ({{data.value['reviews_count']}}) Avis</small>
+        -->  </p>
+        <p class="nameOfTheAuthor">
+          Adaptarea <b> {{session.meta.adaptation}}</b>
+     <!--   <small><rating [score]="data.value['overall_rating']" [max]="5"></rating> ({{data.value['reviews_count']}}) Avis</small>
+     -->  </p>
+        <p class="timeToRead">Timp de lectura <b>~ {{session.meta.lecture_time}} min </b></p>
+        <img  [src]="session.cover_img" style="margin-top: 5px;"/>
+        <ng-container *ngFor="let session of session.content" >
+          <p *ngIf="session.type == 'p'" [innerHTML]="session.content"></p>
+          <img *ngIf="session.type == 'img'" [src]="session.content"/>
+    
+        </ng-container>
+    
+        <!--
+        <h1>{{session.name}}</h1>
+        <img [src]="session.cover_img" />
+        <p>{{session.content}}</p>
+        -->
+       <!-- <ion-text color="medium">
+          {{session.timeStart}} &ndash; {{session.timeEnd}}
+          <br /> {{session.location}}
+        </ion-text>
+      -->
+      </div>
+</ion-content>

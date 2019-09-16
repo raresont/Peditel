@@ -1,0 +1,67 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Webinars and Videos</ion-title>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content>
+
+    <!-- <ion-list #scheduleList [hidden]="shownSessions === 0">
+    --> 
+     <!--- <ion-item-group *ngFor="let group of groups" [hidden]="group.hide"> -->
+      <!--   <ion-item-divider sticky>
+           <ion-label>
+             {{group.time}}
+           </ion-label>
+         </ion-item-divider>
+       -->
+         <ion-grid >
+   
+             <ion-row justify-content-center >
+    <!---     <ion-item-sliding *ngFor="let session of stories" #slidingItem [attr.track]="session.id" [hidden]="session.hide">
+         --  <ion-item button href="app/tabs/(schedule:session/{{session.id}}">
+            <ion-row>
+         -->  
+          <!---<ion-row *ngFor="let session of stories; index as i">
+          --><ion-col size="6"   *ngFor="let session of stories" >
+               <ion-card >
+                 <a href="app/tabs/schedule/session/{{session.id}}"> 
+                   <ion-col col-12 no-margin no-padding>
+                     <img src="{{session.cover_img}}"/></ion-col>
+                     <p *ngIf="session.labels.POPULAR == 1 && session.labels.NOU == 0" class="ribbon">POPULAR</p>
+                     <p *ngIf="session.labels.NOU == 1 && session.labels.POPULAR == 0" class="ribbon2">NOU</p>
+   
+                     <p *ngIf="session.labels.POPULAR == 1 && session.labels.NOU == 1" class="ribbon">POPULAR</p>
+                     <p *ngIf="session.labels.NOU == 1 && session.labels.POPULAR == 1" class="ribbon4">NOU</p>
+   
+                   <ion-col col-12 no-margin no-padding>
+                     <ion-card-content class="newPadding">
+                       <ion-card-title class="noPadding">
+                     <!--   {{data.value['title']}} <ion-badge item-end>{{(data.value['distance']) | number:'1.2-2'}} km</ion-badge>
+                     --> 
+                    <p class="nameOfTheBook"> <b> {{session.name}} </b> </p>
+                   </ion-card-title>
+                       <p class="nameOfTheAuthor">
+                           {{session.meta.author}}
+                     <!--   <small><rating [score]="data.value['overall_rating']" [max]="5"></rating> ({{data.value['reviews_count']}}) Avis</small>
+                     -->  </p>
+                     <p class="timeToRead">~ {{session.meta.lecture_time}} min</p>
+                     </ion-card-content>
+                   </ion-col>
+                   </a>
+               </ion-card>
+
+           </ion-col>
+
+       </ion-row>
+       </ion-grid>
+
+     <ion-list-header [hidden]="shownSessions > 0">
+       Nu s-au gasit povesti.
+     </ion-list-header>
+
+   </ion-content>

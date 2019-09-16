@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Babies</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="bg-style">
+ <!-- <div #mapCanvas class="map-canvas"></div>
+ -->
+ <br>
+ <img src="assets/img/speakers/topFrame2.png" style="margin-top:5%; width:80vw; height:15vh;"/>
+ <br>
+ <br>
+ <section id="slider" text-center>
+  <input type="radio" name="slider" id="s1">
+  <input type="radio" name="slider" id="s2">
+  <input type="radio" name="slider" id="s3" checked>
+  <input type="radio" name="slider" id="s4">
+  <input type="radio" name="slider" id="s5">
+  <label for="s1" id="slide1"><b><p style="margin-top:1%;">Crenguta</p></b><img src="assets/img/speakers/b1.jpg" style="margin-top:5%; width:80%; height:70%;"/> </label>
+  <label for="s2" id="slide2"><b><p style="margin-top:1%;">Ionica</p></b><img src="assets/img/speakers/b2.jpg" style="margin-top:5%; width:80%; height:70%;" /></label>
+  <label for="s3" id="slide3"><b><p style="margin-top:1%;">Ionica</p></b><img src="assets/img/speakers/b3.jpg" style="margin-top:5%; width:80%; height:70%;" /></label>
+  <label for="s4" id="slide4"><b><p style="margin-top:1%;">Crenguta</p></b><img src="assets/img/speakers/b4.jpg"  style="margin-top:5%; width:80%; height:70%;"/></label>
+  <label for="s5" id="slide5"><b><p style="margin-top:1%;">Crenguta</p></b><img src="assets/img/speakers/b1.jpg"  style="margin-top:5%; width:80%; height:70%;"/></label>
+</section>
+<br>
+<br>
+<br>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<div align="center">
+  <button type="button" class="btn btn-warning hell" (click)="GetStatus()" aria-haspopup="true" aria-expanded="false" style="width:50%"><font size="6">Get Status</font>
+  </button>
+  <br>
+  <br>
+
+  <button type="button" class="btn btn-success" (click)="GetStatus()" aria-haspopup="true" aria-expanded="false" style="width:50%"><font size="6">Statistics</font>
+  </button>
+</div>
+
+</ion-content>

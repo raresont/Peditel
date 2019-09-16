@@ -1,0 +1,74 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Child data</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="presentPopover($event)">
+        <ion-icon slot="icon-only" name="more"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="about-header">
+    <img id="toRemove" src="assets/img/tenor.gif" style="top:30vh;" alt="ionic logo">
+  </div>
+
+  <div *ngIf="edited" text-center>
+    <br>
+    <br>
+    <br>
+    <p style="font-size:4vh;">Cortisol level is<br><br><br> <b>12%</b></p>
+    <br>
+    <br>
+    <div align="center">
+      <button type="button" class="btn btn-warning hell" (click)="addStats()" aria-haspopup="true" aria-expanded="false" style="width:50%"><font size="6">Add Data</font>
+      </button>
+      <br>
+    </div>
+  </div>
+
+  <div *ngIf="finalForm" text-center>
+      <form text-center style="padding-left:10%;padding-right:10%;">
+        <br>
+        <br>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Weight</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Weight">
+            <small id="emailHelp" class="form-text text-muted">You can aproximate this value.</small>
+          </div>
+
+          <div class="form-group">
+            <label for="exampleInputPassword1">Body temperature</label>
+            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter temperature">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Alergies</label>
+            <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter temperature">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Address</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Weight">
+            <small id="emailHelp" class="form-text text-muted">It is on your ID</small>
+          </div>
+          <div class="form-check">
+            <!--
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Did he eat in the last hour?</label>
+            -->
+            <br>
+            <small id="emailHelp" class="form-text text-muted">Food restrictions?</small>
+            <img id="food" tabindex="0" src="assets/img/food.jpg" />
+          </div>
+          <br>
+          <button type="submit" class="btn btn-primary"> Update data </button>
+        </form>
+
+  </div>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+</ion-content>

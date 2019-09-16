@@ -1,0 +1,82 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Personal Medical</ion-title>
+  </ion-toolbar>
+</ion-header>
+<script src= "https://player.twitch.tv/js/embed/v1.js"></script>
+
+<ion-content class="outer-content">
+  <ion-list>
+    <ion-grid fixed>
+      <ion-row align-items-stretch>
+          <div id="1"></div>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/W3GzHLQsiqo" frameborder="0" allowfullscreen></iframe>
+          <ion-col text-center size="12" style="background-color:rgb(248, 150, 120);">
+              <ion-button (click)="call()" style="font-size:3vh;color:black!important;" fill="clear" size="small" color="rgb(0, 150, 120)" >
+              <ion-icon name="navigate" slot="start"></ion-icon>
+              Call peditel
+            </ion-button>
+          </ion-col>
+
+        <ion-col size="12" size-md="6" *ngFor="let speaker of speakers">
+          <ion-card class="speaker-card">
+            <ion-card-header>
+              <ion-item detail="false" lines="none" routerLink="/app/tabs/speakers/speaker-details/{{speaker.id}}">
+                <ion-avatar slot="start">
+                  <img [src]="speaker.profilePic" alt="Speaker profile pic">
+                </ion-avatar>
+                {{speaker.name}}
+              </ion-item>
+            </ion-card-header>
+
+            <ion-card-content>
+              <ion-list>
+                <ion-item *ngFor="let session of speaker.sessions" routerLink="/app/tabs/speakers/session/{{session.id}}">
+                  <h3>{{session.name}}</h3>
+                </ion-item>
+
+                <ion-item routerLink="/app/tabs/speakers/speaker-details/{{speaker.id}}">
+                  <h3> {{speaker.about}}</h3>
+                </ion-item>
+              </ion-list>
+            </ion-card-content>
+
+            <ion-row no-padding justify-content-center>
+              <ion-col text-left size="4">
+                <ion-button fill="clear" size="small" style="font-size: 2.3vw;" color="primary">
+                  <ion-icon name="logo-twitter" slot="start"></ion-icon>
+                  Publicatii
+                </ion-button>
+              </ion-col>
+              <ion-col text-center size="4">
+                <ion-button fill="clear" size="small" style="font-size: 2.3vw;" color="primary">
+                  <ion-icon name="share-alt" slot="start"></ion-icon>
+                  Webinarii
+                </ion-button>
+              </ion-col>
+              <ion-col text-right size="4">
+                <ion-button fill="clear" size="small" style="font-size: 2.3vw;" color="primary">
+                  <ion-icon name="chatboxes" slot="start"></ion-icon>
+                  Contact
+                </ion-button>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col text-center size="12" style="background-color:aqua;">
+                  <ion-button routerLink="/signup" style="font-size:3vh;color:black!important;" fill="clear" size="small" color="primary" >
+                  <ion-icon name="navigate" slot="start"></ion-icon>
+                  Obtine directii
+                </ion-button>
+              </ion-col>
+            </ion-row>
+<br>
+
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-list>
+</ion-content>
